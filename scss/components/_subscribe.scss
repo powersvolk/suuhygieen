@@ -1,0 +1,167 @@
+.subscribe {
+    padding: 10px 0 60px;
+    @media only screen and(min-width: 768px) {
+        padding: 20px 0 90px;
+    }
+    @media only screen and(min-width: 992px) {
+        padding: 30px 0 100px;
+    }
+    @media only screen and(min-width: 1200px) {
+        padding: 70px 0 145px;
+    }
+    @media only screen and(min-width: 1440px) {
+        padding: 85px 0 165px;
+    }
+    @media only screen and(min-width: 1680px) {
+        padding: 100px 0 190px;
+    }
+    
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__content {
+        width: 100%;
+        margin-bottom: 35px;
+        @media only screen and(min-width: 992px) {
+            width: 46%;
+            margin: 0;
+        }
+        @media only screen and(min-width: 1440px) {
+            width: 45%;
+        }
+        @media only screen and(min-width: 1680px) {
+            width: 44%;
+        }
+    }
+
+    &__gallery {
+        width: 100%;
+        @media only screen and(min-width: 992px) {
+            width: 50%;
+        }
+        @media only screen and(min-width: 1440px) {
+            width: 49%;
+        }
+        @media only screen and(min-width: 1680px) {
+            width: 48%;
+        }
+    }
+    &__title {
+        font-weight: 300;
+        font-size: 1.5em;
+        color: #435F71; 
+        margin: 0 0 65px;
+        max-width: 580px;
+        padding-right: 80px;
+        position: relative;
+        @media only screen and(min-width: 768px) {
+            font-size: 1.85em;
+            margin: 0 0 75px;
+        }
+        @media only screen and(min-width: 992px) {
+            margin: 0 0 82px;
+            font-size: 2.25em;
+        }
+        a {
+            font-weight: 400;
+            color: #3075C3;
+            text-decoration: underline;
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                color: $dark-blue;
+            }
+        }
+        img {
+            position: absolute;
+            top: -30px;
+            right: 0;
+            @media only screen and(min-width: 992px) {
+                top: -10px;
+            }
+        }
+    }
+    &__info {
+        font-size: 1em;
+        line-height: 180%;
+        color: #4B6D83;
+        margin: 0 0 40px;
+        @media only screen and(min-width: 992px) {
+            margin: 0 0 65px;
+            font-size: 1.1em;
+        }
+        @media only screen and(min-width: 1440px) {
+            margin: 0 0 75px;
+            font-size: 1.125em;
+        }
+        @media only screen and(min-width: 1680px) {
+            margin: 0 0 84px;
+        }
+    }
+    &__more {
+        background: #3089ED;
+        color: white;
+        height: 45px;
+        padding: 5px 17px 5px 22px;
+        line-height: 1;
+        font-size: 0.875em;
+        @media only screen and(min-width: 1440px) {
+            height: 50px;
+            padding: 5px 21px 5px 29px;
+        }
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: white;
+            background: $dark-blue;
+        }
+    }
+    &__gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10%,1fr));
+        grid-auto-rows: 28px;
+        grid-gap: 18px;
+        @media only screen and(min-width: 768px) {
+            grid-auto-rows: 46px;
+            grid-gap: 30px;
+        }
+        @media only screen and(min-width: 992px) {
+            grid-auto-rows: 40px;
+            grid-gap: 22px;
+        }
+        @media only screen and(min-width: 1440px) {
+            grid-auto-rows: 43px;
+            grid-gap: 26px;
+        }
+        @media only screen and(min-width: 1680px) {
+            grid-auto-rows: 46px;
+            grid-gap: 30px;
+        }
+        a {
+            display: block;
+            border-radius: 5px;
+            box-shadow: 0px 25px 70px rgba(28, 52, 67, 0.09);
+            img {
+                display: none;
+            }
+            &:first-child {
+                grid-column-end: span 3;
+                grid-row-end: span 3;
+            }
+            &:nth-child(2) {
+                grid-column-end: span 2;
+                grid-row-end: span 7;
+            }
+            &:nth-child(3) {
+                grid-column-end: span 3;
+                grid-row-end: span 4;
+            }
+        }
+    }
+}
+body .lg-outer.lg-grab img.lg-object {
+    border-radius: 5px;
+}

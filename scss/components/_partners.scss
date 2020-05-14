@@ -1,0 +1,101 @@
+.partner {
+    position: relative;
+    &:before {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        content: "";
+        background: #F4FAFE;
+        display: block;
+        position: absolute;
+    }
+    &-in {
+        padding: 50px 20px 40px 0;
+        background: #F4FAFE;
+        border-radius: 0px 5px 5px 0px;
+        position: relative;
+        @media only screen and(min-width: 992px) {
+            padding: 65px 20px 65px 0;
+        }
+        @media only screen and(min-width: 1440px) {
+            padding: 75px 20px 85px 0;
+        }
+        @media only screen and(min-width: 1680px) {
+            padding: 83px 20px 95px 0;
+		}
+      
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 800;
+        color: $red;
+        line-height: 100%;
+        font-size: 1.25em;
+        margin: 0 0 20px;
+        @media only screen and(min-width: 992px) {
+            font-size: 1.5em;
+        }
+        @media only screen and(min-width: 1440px) {
+            font-size: 1.75em;
+        }
+        @media only screen and(min-width: 1680px) {
+            font-size: 1.875em;
+		}
+    }
+    &__subtitle {
+        max-width: 430px;
+        margin: 0 0 40px;
+        font-size: 0.875em;
+        color: #6A889B;
+        font-weight: 500;
+        @media only screen and(min-width: 992px) {
+            margin: 0 0 50px;
+        }
+        @media only screen and(min-width: 1440px) {
+            margin: 0 0 60px;
+        }
+        @media only screen and(min-width: 1680px) {
+            margin: 0 0 70px;
+		}
+    }
+    &__inner {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+       
+    }
+    &__item {
+        display: block;
+        margin: 0 0 15px 0;
+        width: 100%;
+        @media only screen and(min-width: 768px) {
+            max-width: 210px;
+            margin: 0 15px 15px 0;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        background: #FFFFFF;
+        border-radius: 5px;
+        color: #5B8199;
+        font-weight: 500;
+        font-size: 0.875em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        height: 35px;
+        padding: 5px 20px;
+        &:hover,
+        &:focus {
+            background: $blue;
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.contact {
+    padding: 0;
+    @media only screen and(min-width: 992px) {
+        padding: 45px 0 20px;
+    }
+    @media only screen and(min-width: 1440px) {
+        padding: 60px 0 50px;
+    }
+    @media only screen and(min-width: 1680px) {
+        padding: 70px 0 60px;
+    }
+    &__wrap-title {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0 0 35px;
+        @media only screen and(min-width: 768px) {
+            flex-direction: row;
+            align-items: center;
+		}
+        @media only screen and(min-width: 992px) {
+            margin: 0 0 45px;
+		}
+        @media only screen and(min-width: 1440px) {
+            margin: 0 0 60px;
+		}
+        @media only screen and(min-width: 1680px) {
+            margin: 0 0 70px;
+		}
+    }
+    &__title {
+        text-transform: uppercase;
+        color: $dark-blue;
+        font-size: 1.5em;
+        margin: 0 0 15px;
+        @media only screen and(min-width: 768px) {
+            margin: 0;
+            font-size: 1.75em;
+		}
+    }
+    &__subtitle {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 0.875em;
+        line-height: 100%;
+        color: #31A8DB;
+        
+        img {
+            margin-right: 7px;
+        }
+    }
+    .form__checkbox {
+
+        @media only screen and(min-width: 1440px) {
+			margin: 22px 0 35px;
+		}
+        @media only screen and(min-width: 1680px) {
+			margin: 26px 0 39px;
+		}
+    }
+}
+  
